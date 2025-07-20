@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4978717 */
+  src: url('iconfont.woff2?t=1752929896823') format('woff2'),
+       url('iconfont.woff?t=1752929896823') format('woff'),
+       url('iconfont.ttf?t=1752929896823') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e8ca";
+}
+
+.icon-arrow-right:before {
+  content: "\e8c9";
+}
+
+.icon-icon-test:before {
+  content: "\e65e";
+}
+
+.icon-icon-test1:before {
+  content: "\e65f";
+}
+
+.icon-alipay:before {
+  content: "\e666";
+}
+
+.icon-money-finance-seller-fill:before {
+  content: "\e830";
+}
+
+.icon-email-fill:before {
+  content: "\e856";
+}
+
+.icon-phone:before {
+  content: "\e860";
+}
+
+.icon-menu:before {
+  content: "\e7f4";
+}
+
+.icon-search:before {
+  content: "\e8ef";
+}
+
+.icon-duoyun:before {
+  content: "\e600";
+}
+
+.icon-yun:before {
+  content: "\e601";
+}
+
+.icon-wuqi:before {
+  content: "\e602";
+}
+
+.icon-xiaoyu:before {
+  content: "\e603";
+}
+
+.icon-leidian:before {
+  content: "\e604";
+}
+
+.icon-feng:before {
+  content: "\e605";
+}
+
+.icon-nongyun:before {
+  content: "\e606";
+}
+
+.icon-wanshang:before {
+  content: "\e607";
+}
+
+.icon-lieri:before {
+  content: "\e608";
+}
+
+.icon-dongyu:before {
+  content: "\e609";
+}
+
+.icon-yujiaxue:before {
+  content: "\e60a";
+}
+
+.icon-daxue:before {
+  content: "\e60b";
+}
+
+.icon-zhongxue:before {
+  content: "\e60c";
+}
+
+.icon-dayu:before {
+  content: "\e60d";
+}
+
+.icon-tianqi:before {
+  content: "\e694";
+}
+
+.icon-tianqi1:before {
+  content: "\e631";
+}
+
+.icon-tianqi2:before {
+  content: "\e61b";
+}
+
+.icon-tianqi3:before {
+  content: "\e60e";
+}
+
+.icon-weather-9:before {
+  content: "\e6e5";
+}
+
+.icon-stand-storm:before {
+  content: "\e6eb";
+}
+
+.icon-weather-21:before {
+  content: "\e6ec";
+}
+
+.icon-night:before {
+  content: "\e6f5";
+}
+
+.icon-tianqi4:before {
+  content: "\e622";
+}
+
+.icon-tianqi-leidiantianqi:before {
+  content: "\e6dc";
+}
+
+.icon-tianqi5:before {
+  content: "\e6a7";
+}
+

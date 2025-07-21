@@ -1,6 +1,6 @@
 <template>
     <div class="title">
-          <i :class="weathericon"></i>
+          <i :class="weathericonNight"></i>
         <div class="bottom">
             <dl>
                 <dt>天气</dt>
@@ -16,9 +16,10 @@
 <script setup lang="ts" name="ws2">
   import { useTianqiStore } from '@/stores/tianqi';
     import { storeToRefs } from 'pinia';
+    import { ref } from 'vue';
     const store = useTianqiStore();
     const { cityName , data } = storeToRefs(store);
-      const weathericon = store.weathericon;
+      const {weathericonNight} = store
 </script>
 <style scoped>
 *{

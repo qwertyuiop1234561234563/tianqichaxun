@@ -16,9 +16,10 @@
 <script setup lang="ts" name="ws1">
   import { useTianqiStore } from '@/stores/tianqi';
     import { storeToRefs } from 'pinia';
+    import { ref } from 'vue';
     const store = useTianqiStore();
     const { cityName , data } = storeToRefs(store);
-      const weathericon = store.weathericon;
+      const {weathericon} = store
 </script>
 <style scoped>
 *{

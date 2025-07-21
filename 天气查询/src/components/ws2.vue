@@ -1,6 +1,6 @@
 <template>
     <div class="title">
-          <i class="iconfont icon-lieri"></i>
+          <i :class="weathericon"></i>
         <div class="bottom">
             <dl>
                 <dt>天气</dt>
@@ -18,6 +18,7 @@
     import { storeToRefs } from 'pinia';
     const store = useTianqiStore();
     const { cityName , data } = storeToRefs(store);
+      const weathericon = store.weathericon;
 </script>
 <style scoped>
 *{

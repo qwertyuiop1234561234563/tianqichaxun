@@ -29,6 +29,7 @@
     import { storeToRefs } from 'pinia';
     const store = useTianqiStore();
     const { cityName , data } = storeToRefs(store);
+  
 </script>
 <style scoped>
     *{

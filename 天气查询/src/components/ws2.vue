@@ -4,11 +4,11 @@
         <div class="bottom">
             <dl>
                 <dt>天气</dt>
-                <dt>时间</dt>
+                <dt>风向</dt>
             </dl>
             <dl>
-                <dd><strong>{{ data.lives?.[0].weather }}</strong></dd>
-                <dd><strong>{{ data.lives?.[0].reporttime }}</strong></dd>
+                <dd><strong>{{ data?.casts?.[0]?.nightweather || '加载中' }}</strong></dd>
+                <dd><strong>{{ data?.casts?.[0]?.nightwind || '加载中' }}</strong></dd>
             </dl>
         </div>
     </div>
@@ -47,5 +47,9 @@ i {
         font-size: 200px;
         color: #ffffff;
         text-align: center;
+        transition: all 1.5s ease;
     }
+dd{
+        transition: all 1s ease;
+}
 </style>

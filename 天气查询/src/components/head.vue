@@ -7,7 +7,7 @@
         <div class="search">
             <label for="tianQi" style="position:relative;">
                 <input id="tianQi" type="text" placeholder="输入城市名字" v-model="cityName"/>
-                <i class="iconfont icon-search"><a href="#" @click="getTianQi(cityName)"></a></i>
+                <i class="iconfont icon-search" @click="getTianQi(cityName)" @keydown.enter="getTianQi(cityName)"></i>
             </label>
         </div>
         <div class="menu">
@@ -31,6 +31,7 @@
 import stateRaw from '@/hooks/useAboutMe';
 import { useTianqiStore } from '@/stores/tianqi';
 import { storeToRefs } from 'pinia';
+import { onMounted } from 'vue';
 const { state } = stateRaw();
 const tianqiStore = useTianqiStore();
 const { cityName, show } = storeToRefs(tianqiStore);
@@ -43,7 +44,9 @@ const hide = () => {
         show.value = false;
     }, 900)
 }
-
+onMounted(() => {
+    getTianQi('绵阳');
+});
 </script>
 <style scoped>
 * {

@@ -1,24 +1,24 @@
 <template>
     <div class="title">
         <div class="header"><h3>当前气温</h3><i class="iconfont icon-arrow-down"></i></div>
-        <div class="temp">{{ data?.lives?.[0]?.temperature || '未知' }}</div>
+        <div class="temp">{{ data?.casts?.[0]?.daytemp || '加载中' }}</div>
         <div class="bottom">
             <div>
                 <dl>
                     <dt>城市</dt>
                 </dl>
                 <dl>
-                    <dd>{{ cityName || '绵阳' }}</dd>
+                    <dd>{{ data?.city || '加载中' }}</dd>
                 </dl>
             </div>
             <div id="weather">
                 <dl>
-                    <dt>风向</dt>
-                    <dt>风力</dt>
+                    <dt>明天</dt>
+                    <dt>后天</dt>
                 </dl>
                 <dl>
-                    <dd>{{ data.lives?.[0].winddirection }}</dd>
-                    <dd>{{ data.lives?.[0].windpower }}</dd>
+                    <dd>{{ data?.casts?.[1]?.daytemp || '加载中' }}</dd>
+                    <dd>{{ data?.casts?.[2]?.daytemp || '加载中' }}</dd>
                 </dl>
             </div>
        </div>
@@ -45,6 +45,7 @@
         text-align: left;
         height: 300px;
         line-height: 300px;
+        transition: all 1s ease;
     }
  .title {
     border-radius: 15px;
@@ -85,6 +86,9 @@ dl{
 }
 dt{
     color: #616161;
+}
+dd{
+    transition: all 1s ease;
 }
 #weather dt,#weather dd{
     margin-left: 120px;

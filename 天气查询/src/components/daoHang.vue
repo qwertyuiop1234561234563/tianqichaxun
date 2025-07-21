@@ -2,8 +2,8 @@
     <div class="title">
         <div class="search">
             <label for="tianQi" style="position:relative;">
-                <input id="tianQi" type="text" placeholder="输入时间" v-model="cityName"/>
-                <i class="iconfont icon-search"><a href="#" @click="getTianQi(cityName)"></a></i>
+                <input id="tianQi" type="text" placeholder="输入城市" v-model="cityName"/>
+                <i class="iconfont icon-search"><a href="#" @click="getTianQi(cityName)" @keydown.enter="getTianQi(cityName)"></a></i>
             </label>
         </div>
         <div class="right">

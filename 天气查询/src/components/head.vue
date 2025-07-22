@@ -18,7 +18,7 @@
     
     <transition name="slide" mode="out-in" @mouseleave="hide">
         <div v-if="show" class="about-me">
-            <img src="@/assets/img/touxiang.jpg" alt="头像" style="width: 100px; height: 100px; border-radius: 50%;vertical-align: middle;">
+            <img src="@/assets/img/touXiang.jpg" alt="头像" style="width: 100px; height: 100px; border-radius: 50%;vertical-align: middle;">
             <h3 style="vertical-align: middle;">about me</h3>
             <ul>
                 <li v-for="(item, index) in state" :key="index" v-html="item.show" ></li>

@@ -17,9 +17,13 @@
   import { useTianqiStore } from '@/stores/tianqi';
     import { storeToRefs } from 'pinia';
     import { ref } from 'vue';
+    import { watchEffect } from 'vue';
     const store = useTianqiStore();
-    const { cityName , data } = storeToRefs(store);
-      const {weathericon} = store
+    const { cityName , data, weathericon} = storeToRefs(store);
+    const weatherIcon = ref('');
+    watchEffect(() => {
+        weatherIcon.value = weathericon.value;
+    });
 </script>
 <style scoped>
 *{
